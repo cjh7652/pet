@@ -9,7 +9,6 @@ const Footer = () => {
                 <div>
                     <p>
                         <Link to="">소개</Link>
-                  
                         <Link to="">이용약관</Link>
                         <Link to="">스토어 가이드</Link>
                         <Link to="">개인정보 처리방침</Link>

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Best from './../componenets/Best';
 /* import 'swiper/css/scrollbar'; */
 
 const MainPage = () => {
@@ -28,6 +29,9 @@ const MainPage = () => {
                     <SwiperSlide><img src={process.env.PUBLIC_URL + './img/slider02.png'} alt="" /></SwiperSlide>
                     <SwiperSlide><img src={process.env.PUBLIC_URL + './img/slider03.jpg'} alt="" /></SwiperSlide>
                 </Swiper>
+            </section>
+            <section className='section2'>
+                <Best />
             </section>
         </div>
     );
