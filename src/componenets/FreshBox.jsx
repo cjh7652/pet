@@ -23,7 +23,7 @@ const FreshBox = () => {
                     pagination={{
                         type: 'fraction',
                       }}
-                      loop={true}
+                    loop={true}
                       autoplay={true}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}

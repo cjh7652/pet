@@ -92,6 +92,56 @@ a {
   box-shadow: 2px 2px 20px #333;
 }
 
+.productWrap {
+  padding: 50px 0;
+}
+
+.productWrap > h2 {
+  text-align: center;
+}
+
+.productWrap > p {
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.productWrap .product-flex {
+  display: flex;
+  padding: 0 50px;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.productWrap .product-flex .product-card {
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.productWrap .product-flex .product-card > div img {
+  width: 100%;
+}
+
+.productWrap .product-flex .product-card .product-content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.productWrap .product-flex .product-card .product-content .product-name {
+  color: #555;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.productWrap .product-flex .product-card .product-content .product-price {
+  color: #555;
+  font-size: 17px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

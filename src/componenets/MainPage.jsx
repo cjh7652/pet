@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Best from './../componenets/Best';
 import FreshBox from './../componenets/FreshBox';
+import Products from './Products';
 /* import 'swiper/css/scrollbar'; */
 
 const MainPage = () => {
@@ -36,6 +37,9 @@ const MainPage = () => {
             </section>
             <div className="section3">
                 <FreshBox />
+            </div>
+            <div className="section4">
+                <Products/>
             </div>
         </div>
     );
