@@ -1,10 +1,11 @@
 
-import './App.css';
+
 import MainPage from './componenets/MainPage';
 import AboutPage from './componenets/AboutPage';
 import Header from './componenets/Header';
 import Footer from './componenets/Footer';
 import {Routes, Route} from 'react-router-dom';
+import './App.scss';
 
 function App() {
   return (

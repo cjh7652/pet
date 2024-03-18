@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Best from './../componenets/Best';
+import FreshBox from './../componenets/FreshBox';
 /* import 'swiper/css/scrollbar'; */
 
 const MainPage = () => {
@@ -33,6 +34,9 @@ const MainPage = () => {
             <section className='section2'>
                 <Best />
             </section>
+            <div className="section3">
+                <FreshBox />
+            </div>
         </div>
     );
 };

@@ -24,24 +24,30 @@ const Best = () => {
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <b>반자동급식</b>
-                                        <p> 먹은 만큼 사료가 나와 외출 시에도 끼니 걱정 NO!<br /> 반려동물이 자율적으로 먹을 수 있어요~</p>
+                                        <div className='aWrap'>
+                                            <b>반자동급식</b>
+                                            <p> 먹은 만큼 사료가 나와 외출 시에도 끼니 걱정 NO!<br /> 반려동물이 자율적으로 먹을 수 있어요~</p>
+                                        </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span> <button>MORE VIEW</button></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">   
-                                        <span> <button>MORE VIEW</button></span>
+                                        <div className='aWrap'><span> <i><button>MORE VIEW</button></i></span></div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <b>반려동물 접이식 밥그릇 2p세트</b>
-                                        <p>늘렸다 줄였다~ 높이 조절로 편안하게~<br />반려동물 휴대용 접이식 밥그릇</p>
+                                        <div className='aWrap'>
+                                            <span> <i><button>MORE VIEW</button></i></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div className='aWrap'>
+                                            <b>반려동물 접이식 밥그릇 2p세트</b>
+                                            <p>늘렸다 줄였다~ 높이 조절로 편안하게~<br />반려동물 휴대용 접이식 밥그릇</p>
+                                        </div>
                                     </a>
                                 </li>
                             </ul>
