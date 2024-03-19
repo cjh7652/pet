@@ -4,12 +4,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useNavigate } from 'react-router-dom';
 import Best from './../componenets/Best';
 import FreshBox from './../componenets/FreshBox';
 import Products from './Products';
+import { DownloadOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
+/* import 'antd/dist/antd.css'; */
 /* import 'swiper/css/scrollbar'; */
 
 const MainPage = () => {
+    const navigate=useNavigate();
     return (
         <div>
             <section id='mainSlider'>
@@ -40,6 +45,9 @@ const MainPage = () => {
             </div>
             <div className="section4">
                 <Products/>
+                <Button onClick={()=>navigate('/uploadpage')} type="default" icon={<DownloadOutlined />} >
+                    상품업로드
+                </Button>
             </div>
         </div>
     );
