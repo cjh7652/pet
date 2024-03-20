@@ -1,35 +1,18 @@
 import React,{useState} from 'react';    
-import { useNavigate } from 'react-router-dom'; 
+/* import { useNavigate } from 'react-router-dom';  */
 import {  Button,/*  Checkbox, */ Form, Input, Divider, InputNumber, Upload, message} from 'antd';
 import { FiCamera } from "react-icons/fi";
-import axios from 'axios';
+/* import axios from 'axios'; */
 
 const Uploadpage = () => {
     const {TextArea} = Input;
-    const [imageUrl, setImageUrl]=useState(null);
-    const navigate=useNavigate();
+    /* const [imageUrl, setImageUrl]=useState(null); */
+   /*  const navigate=useNavigate(); */
     const onFinish = (val) => {
-        
-       /*  axios.post(`https://f7b1c6c3-c64c-4194-bcfd-2d2bb24d1e7e.mock.pstmn.io/products` , {
-            name:val.name,
-            description:val.description,
-            price:val.price,
-            seller:val.seller,
-            imageUrl:imageUrl,
-        })
-        .then((result)=>{
-            navigate("/", {replace: true})
-        })
-        .catch((error)=>{
-            console.error(error);
-            message.error('에러가 발생했습니다.')
-        }) */
-        console.log("성공")
-      };
-     /*  const onFinish = (values) => {
-		console.log("Success:", values);
-	};
- */
+        console.log("Success:", val);
+      
+    };
+
       /* const onChangeImage = (info) =>{
         if(info.file.status==='uploading'){
             return;
@@ -45,14 +28,10 @@ const Uploadpage = () => {
         <div className='upload-container'>
             <Form name="uploadForm" onFinish={onFinish}>
                 <Form.Item name="files" valuePropName="image">
-               {/*  <Upload name="image" action={`https://f7b1c6c3-c64c-4194-bcfd-2d2bb24d1e7e.mock.pstmn.io/products/image`} listType="picture" showUploadList={false} onChange={onChangeImage}> */}
-                        {/* {imageUrl ? (<img id="upload-img" src={`https://f7b1c6c3-c64c-4194-bcfd-2d2bb24d1e7e.mock.pstmn.io/products/${imageUrl}`} alt=''/>) :( */}
-                            <div id="upload-img">
-                                <FiCamera className='cameraIcon' />
-                                <span>이미지를 업로드해주세요</span>
-                            </div>
-              {/*           )}
-                    </Upload> */}
+                    <div id="upload-img">
+                        <FiCamera className='cameraIcon' />
+                        <span>이미지를 업로드해주세요</span>
+                    </div>
                 </Form.Item>
                 <Divider />
                 <Form.Item
